@@ -1,0 +1,20 @@
+body {
+    background-image:url('Firefall_Copacabana.jpg');
+    background-size: cover;
+}
+
+h1 {
+    text-align:center;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.menyWrapper {
+    min-height: 50px;
+    position: relative;
+    margin: 0 auto;
+    background-color: black;
+}

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CarList">
+  <DataContextMoniker Name="/CarListDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3a322afc-d258-4ea3-b129-10cc2983ba0a" absoluteBounds="0.5, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/CarListDataContext/Band" />
+      <nestedChildShapes>
+        <elementListCompartment Id="309d8a57-696d-42e2-a12d-37f6b23bf7f5" absoluteBounds="0.51500000000000012, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c5656839-6f02-4e42-895a-c9edf8d1b417" absoluteBounds="2.875, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/CarListDataContext/Record" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd85716c-df64-407e-91c5-609fb4be679f" absoluteBounds="2.89, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 1.63544840494792); (2.875 : 1.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CarListDataContext/Band/Band_Record" />
+      <nodes>
+        <classShapeMoniker Id="3a322afc-d258-4ea3-b129-10cc2983ba0a" />
+        <classShapeMoniker Id="c5656839-6f02-4e42-895a-c9edf8d1b417" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
