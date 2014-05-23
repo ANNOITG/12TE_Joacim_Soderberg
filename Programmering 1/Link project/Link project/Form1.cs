@@ -21,10 +21,6 @@ namespace Link_project
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
-            recordBandCbx.DataSource = from data in db.Bands
-                                       orderby data.Band_Name
-                                       select data;
-
             bandDGV.DataSource = bandBS;
             bandBS.DataSource = from data in db.Bands
                                 select data;
@@ -58,9 +54,6 @@ namespace Link_project
             }
             bandBS.DataSource = from allBands in db.Bands
                                 select allBands;
-            recordBandCbx.DataSource = from data in db.Bands
-                                       orderby data.Band_Name
-                                       select data;
         }
 
         private void bandRemoveBtn_Click(object sender, EventArgs e)
@@ -75,21 +68,6 @@ namespace Link_project
 
                 bandBS.DataSource = from data in db.Bands
                                     select data;
-                recordBandCbx.DataSource = from data in db.Bands
-                                           orderby data.Band_Name
-                                           select data;
-            }
-        }
-
-        int changeState = 0;
-        int tempID;
-        private void BandChangeBTN_Click(object sender, EventArgs e)
-        {
-            if (bandDGV.SelectedRows.Count == 1)
-            {
-                int selected_id = (int)bandDGV.SelectedRows[0].Cells[0].Value;
-
-                Band b = db.Bands.Single(band => band.Band_ID == selected_id);
             }
         }
     }
