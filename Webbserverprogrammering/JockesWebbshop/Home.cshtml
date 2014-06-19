@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="@Href("~/JockesWebbshop.css")" type="text/css" />
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+    <p>This is the home page.</p>
+    <p>
+        @if (WebSecurity.IsAuthenticated){
+          @:<p>Welcome, @WebSecurity.CurrentUserName</p>
+          @:<p><a href="@Href("~/Logout")">Log Out</a></p>
+        }
+        else{
+          @:<a href="@Href("~/Login")">Log in</a>
+          @:<a href="@Href("~/Register")">Register</a> 
+        }
+    </p>
+    <p>
+        <a href="@Href("~/Members/Members")">Members area</a>
+    </p>
+    <p>
+        <a href="@Href("~/Admin/manageRoles")">Manage Roles</a>
+    </p>
+</body>
+</html>
